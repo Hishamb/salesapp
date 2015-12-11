@@ -47,4 +47,9 @@ var app = {
 };
 
 app.initialize();
+function opensize()
+{
+var ref = window.open('http://apache.org', '_blank', 'location=yes');
+ref.addEventListener('loadstart', function(event) { alert(event.url); });
+}
     
